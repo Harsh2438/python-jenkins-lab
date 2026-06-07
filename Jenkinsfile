@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('checkout code'){
             steps{
-                git 'https://github.com/Harsh2438/python-jenkins-lab'
+                git branch: 'main', url: 'https://github.com/Harsh2438/python-jenkins-lab'
             }
         }
         stage('build image'){
