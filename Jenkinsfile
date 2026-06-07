@@ -11,12 +11,12 @@ pipeline{
         }
         stage('build image'){
             steps{
-                sh 'docker build -t python-jenkins-lab .'
+                bat 'docker build -t python-jenkins-lab .'
             }
         }
         stage('show image'){
             steps{
-                sh 'docker images'
+                bat 'docker images'
             }
         }
     }
